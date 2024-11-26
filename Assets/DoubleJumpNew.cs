@@ -15,7 +15,7 @@ public class CollisionJump : MonoBehaviour
                 collisionDoubleJumpTrue = true;
                 Destroy(gameObject);
                 powerUp = 1;
-                collision.gameObject.GetComponent <PlayerMovement>().powerUp = 1;
+                collision.gameObject.GetComponent <PlayerMovement>().powerUp = 2;
             }
     }
 }

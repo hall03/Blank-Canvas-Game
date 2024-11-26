@@ -13,7 +13,6 @@ public class AttackUnlock : MonoBehaviour
         {
             collisionAttackTrue = true;
             Destroy(gameObject);
-            Debug.LogError("Can Attack!");
             collision.gameObject.GetComponent<PlayerMovement>().powerUp = 3;
         }
     }

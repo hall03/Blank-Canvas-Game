@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 8f11f39ee0f3ce441b6448c59f9e2fbd
+guid: b32b02d9bd6a85440a97462dd6bed3f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7235645097427014639
-    second: walkTransition0_0
+      213: -2312404724872225286
+    second: walkTransition4_0
   - first:
-      213: 5453661183720296183
-    second: walkTransition0_1
+      213: 2213450131503279230
+    second: walkTransition4_1
   - first:
-      213: 2609597105589955800
-    second: walkTransition0_2
+      213: 4587641814215059783
+    second: walkTransition4_2
   - first:
-      213: -924137174839281737
-    second: walkTransition0_3
+      213: -6483433318654868790
+    second: walkTransition4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,11 +122,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkTransition0_0
+      name: walkTransition4_0
       rect:
         serializedVersion: 2
-        x: 630
-        y: 441
+        x: 625
+        y: 444
         width: 6
         height: 7
       alignment: 0
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe31fe841ec2a6460800000000000000
-      internalID: 7235645097427014639
+      spriteID: afd5e058720b8efd0800000000000000
+      internalID: -2312404724872225286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkTransition0_1
+      name: walkTransition4_1
       rect:
         serializedVersion: 2
-        x: 637
+        x: 631
         y: 358
-        width: 605
-        height: 330
+        width: 671
+        height: 356
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fe0cfca3fb4fab40800000000000000
-      internalID: 5453661183720296183
+      spriteID: e7c6b40da21c7be10800000000000000
+      internalID: 2213450131503279230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkTransition0_2
+      name: walkTransition4_2
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 403
-        width: 11
-        height: 13
+        x: 1293
+        y: 408
+        width: 10
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,17 +181,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8dca395cdb6273420800000000000000
-      internalID: 2609597105589955800
+      spriteID: 74964057ce39aaf30800000000000000
+      internalID: 4587641814215059783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkTransition0_3
+      name: walkTransition4_3
       rect:
         serializedVersion: 2
-        x: 1245
+        x: 1300
         y: 416
         width: 6
         height: 6
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b7b8f1c22ecc23f0800000000000000
-      internalID: -924137174839281737
+      spriteID: ac205a45fb73606a0800000000000000
+      internalID: -6483433318654868790
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walkTransition0_0: 7235645097427014639
-      walkTransition0_1: 5453661183720296183
-      walkTransition0_2: 2609597105589955800
-      walkTransition0_3: -924137174839281737
+      walkTransition4_0: -2312404724872225286
+      walkTransition4_1: 2213450131503279230
+      walkTransition4_2: 4587641814215059783
+      walkTransition4_3: -6483433318654868790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,6 +6,10 @@ using System;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float jumpheight;
+    [SerializeField] private float secondjumpheight;
+    [SerializeField] private float maxVelocity;
+    //[SerializeField] private float spriteSize;
     private Rigidbody2D body;
     private Animator anim;
     private bool grounded;
@@ -23,7 +27,10 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
- 
+
+        //creates max gravity velocity
+        body.linearVelocity = Vector3.ClampMagnitude(body.linearVelocity, maxVelocity);
+
         //Flip player face
         if (horizontalInput > 0.01f)
             transform.localScale = Vector3.one;
@@ -35,11 +42,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (grounded)
             {
-                Jump();
+                Jump(jumpheight);
             }
-            else if (powerUp >= 1 && doubleJump)
+            else if (powerUp >= 2 && doubleJump)
             {
-                Jump();
+                Jump(secondjumpheight);
                 doubleJump = false;
             }
         }
@@ -59,9 +66,9 @@ public class PlayerMovement : MonoBehaviour
             body.linearVelocity = new Vector2(body.linearVelocity.x, body.linearVelocity.y / 2);
     }
  
-    private void Jump()
+    private void Jump(float jumpheight)
     {
-        body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
+        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpheight);
         anim.SetTrigger("jump");
         grounded = false;
     }

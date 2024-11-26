@@ -14,7 +14,7 @@ public class DashUnlock : MonoBehaviour
             collisionDashTrue = true;
             Destroy(gameObject);
             Debug.LogError("Can Dash!");
-            collision.gameObject.GetComponent<PlayerMovement>().powerUp = 2;
+            collision.gameObject.GetComponent<PlayerMovement>().powerUp = 1;
         }
     }
 }
