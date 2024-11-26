@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 96986405}
   - component: {fileID: 96986404}
   - component: {fileID: 96986403}
+  - component: {fileID: 96986406}
   m_Layer: 0
   m_Name: 1st Powerup
   m_TagString: Powerup
@@ -395,12 +396,25 @@ Transform:
   m_GameObject: {fileID: 96986402}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 327.9, y: 155.8, z: 0}
+  m_LocalPosition: {x: 35.68817, y: -21.180191, z: 0}
   m_LocalScale: {x: 5.14, y: 5.74, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96986406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96986402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bb06cd05407048b342e4319f8ac38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionDashTrue: 0
 --- !u!1 &166432650
 GameObject:
   m_ObjectHideFlags: 0
@@ -5333,6 +5347,7 @@ GameObject:
   - component: {fileID: 1232869462}
   - component: {fileID: 1232869464}
   - component: {fileID: 1232869463}
+  - component: {fileID: 1232869465}
   m_Layer: 0
   m_Name: AttackArea
   m_TagString: Untagged
@@ -5417,6 +5432,23 @@ PolygonCollider2D:
       - {x: 7, y: 1}
       - {x: 70, y: 1}
   m_UseDelaunayMesh: 0
+--- !u!114 &1232869465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232869461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd805f8736ef1ae4fb134e1c06335ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 20
+  dashDuration: 0.2
+  dashCooldown: 1
+  playerRigidbody: {fileID: 0}
+  normalSpeed: 5
 --- !u!1 &1306969750
 GameObject:
   m_ObjectHideFlags: 0
@@ -5433,6 +5465,7 @@ GameObject:
   - component: {fileID: 1306969756}
   - component: {fileID: 1306969757}
   - component: {fileID: 1306969759}
+  - component: {fileID: 1306969760}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -5645,6 +5678,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4206022efb43c0c40b25389b02468f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1306969760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306969750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd805f8736ef1ae4fb134e1c06335ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 160
+  dashDuration: 0.75
+  dashCooldown: 1
+  playerRigidbody: {fileID: 1306969751}
+  normalSpeed: 40
 --- !u!1 &1320933420
 GameObject:
   m_ObjectHideFlags: 0
