@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
  
 public class PlayerMovement : MonoBehaviour
 {
@@ -51,10 +54,5 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
             grounded = true;
-        
-        if (collision.gameObject.tag == "Powerup")
-        {
-            Destroy(collision.gameObject);
-        }
     }
 }
