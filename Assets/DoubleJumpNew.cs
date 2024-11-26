@@ -6,6 +6,7 @@ using System;
 public class CollisionJump : MonoBehaviour
 {
     public bool collisionDoubleJumpTrue;
+    public int powerUp;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,7 +14,8 @@ public class CollisionJump : MonoBehaviour
             {
                 collisionDoubleJumpTrue = true;
                 Destroy(gameObject);
-                Debug.Log("sakfjlasfj");
+                powerUp = 1;
+                collision.gameObject.GetComponent <PlayerMovement>().powerUp = 1;
             }
     }
 }

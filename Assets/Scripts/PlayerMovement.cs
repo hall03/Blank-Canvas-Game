@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private bool grounded;
     private bool doubleJump;
 
-    public int powerup = 0;
+    public int powerUp = 0;
 
     private void Awake()
     {   
@@ -31,8 +31,23 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
  
         //Jump
-        if (Input.GetKey(KeyCode.Space) && grounded)
-            Jump();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (grounded)
+            {
+                Jump();
+            }
+            else if (powerUp == 1 && doubleJump)
+            {
+                Jump();
+                doubleJump = false;
+            }
+        }
+
+        if (grounded)
+        {
+            doubleJump = true;
+        }
  
         //Animation
         anim.SetBool("run", horizontalInput != 0);
