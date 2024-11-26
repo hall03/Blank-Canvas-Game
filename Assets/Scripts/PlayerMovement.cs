@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Jump();
             }
-            else if (powerUp == 1 && doubleJump)
+            else if (powerUp >= 1 && doubleJump)
             {
                 Jump();
                 doubleJump = false;
@@ -48,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
         {
             doubleJump = true;
         }
+
+
  
         //Animation
         anim.SetBool("run", horizontalInput != 0);
