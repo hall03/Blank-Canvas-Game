@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: 6406109317810671553
     second: shooting01_2
+  - first:
+      213: 6893098351443374780
+    second: shooting01_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,6 +105,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -109,10 +125,10 @@ TextureImporter:
       name: shooting01_0
       rect:
         serializedVersion: 2
-        x: 631
-        y: 358
-        width: 613
-        height: 353
+        x: 0
+        y: 253
+        width: 10
+        height: 17
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,12 +147,12 @@ TextureImporter:
       name: shooting01_1
       rect:
         serializedVersion: 2
-        x: 1236
-        y: 408
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 16
+        y: 0
+        width: 1855
+        height: 1071
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,10 +169,10 @@ TextureImporter:
       name: shooting01_2
       rect:
         serializedVersion: 2
-        x: 1243
-        y: 416
-        width: 6
-        height: 6
+        x: 1872
+        y: 175
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,11 +187,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: shooting01_3
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 151
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2fc9fed6439af50800000000000000
+      internalID: 6893098351443374780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1902b1b4935d812408130037999900f0
+    spriteID: ce79be14847cdd14d8edebd52097057d
     internalID: 0
     vertices: []
     indices: 
@@ -188,6 +226,7 @@ TextureImporter:
       shooting01_0: -305519197206878849
       shooting01_1: -8568343311875929096
       shooting01_2: 6406109317810671553
+      shooting01_3: 6893098351443374780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

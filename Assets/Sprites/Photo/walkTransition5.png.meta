@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -35762328723592615
     second: walkTransition5_3
+  - first:
+      213: 8114556292692950111
+    second: walkTransition5_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,10 +128,10 @@ TextureImporter:
       name: walkTransition5_0
       rect:
         serializedVersion: 2
-        x: 625
-        y: 444
-        width: 6
-        height: 7
+        x: 0
+        y: 262
+        width: 13
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +150,10 @@ TextureImporter:
       name: walkTransition5_1
       rect:
         serializedVersion: 2
-        x: 631
-        y: 358
-        width: 671
-        height: 357
+        x: 19
+        y: 0
+        width: 2034
+        height: 1086
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +172,10 @@ TextureImporter:
       name: walkTransition5_2
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 408
-        width: 10
-        height: 8
+        x: 2065
+        y: 175
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +194,10 @@ TextureImporter:
       name: walkTransition5_3
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 416
-        width: 6
-        height: 6
+        x: 2043
+        y: 151
+        width: 27
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,6 +208,28 @@ TextureImporter:
       bones: []
       spriteID: 95ae61cf952f08ff0800000000000000
       internalID: -35762328723592615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkTransition5_4
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 136
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cbfd794f1bc9070800000000000000
+      internalID: 8114556292692950111
       vertices: []
       indices: 
       edges: []
@@ -222,11 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      walkTransition5_0: -5675956354617107139
-      walkTransition5_1: 8889889580923752573
-      walkTransition5_2: -2790962165402502950
-      walkTransition5_3: -35762328723592615
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 4531332553648001145
     second: shooting05_0
+  - first:
+      213: -5940010838563645432
+    second: shooting05_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,6 +99,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -103,12 +119,12 @@ TextureImporter:
       name: shooting05_0
       rect:
         serializedVersion: 2
-        x: 631
-        y: 358
-        width: 1286
-        height: 365
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 253
+        width: 10
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -121,11 +137,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: shooting05_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 3898
+        height: 1110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80891752d97d09da0800000000000000
+      internalID: -5940010838563645432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a568f2e575162e14194fff43bac18962
+    spriteID: 1d1504430317a564fb1c86713ef72389
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +174,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       shooting05_0: 4531332553648001145
+      shooting05_1: -5940010838563645432
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

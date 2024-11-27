@@ -11,6 +11,12 @@ TextureImporter:
   - first:
       213: 4193715263228349901
     second: walking02_2
+  - first:
+      213: 6446131247249655666
+    second: walking02_3
+  - first:
+      213: 6997809635293899964
+    second: walking02_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,6 +108,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -109,10 +128,10 @@ TextureImporter:
       name: walking02_0
       rect:
         serializedVersion: 2
-        x: 654
-        y: 437
-        width: 6
-        height: 7
+        x: 0
+        y: 240
+        width: 13
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +150,10 @@ TextureImporter:
       name: walking02_1
       rect:
         serializedVersion: 2
-        x: 662
-        y: 358
-        width: 621
-        height: 321
+        x: 22
+        y: 0
+        width: 1896
+        height: 976
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +172,10 @@ TextureImporter:
       name: walking02_2
       rect:
         serializedVersion: 2
-        x: 1279
-        y: 403
-        width: 12
-        height: 19
+        x: 1932
+        y: 176
+        width: 11
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,11 +190,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: walking02_3
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 151
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2778cdf5732457950800000000000000
+      internalID: 6446131247249655666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking02_4
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 136
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbcaf7d89c63d1160800000000000000
+      internalID: 6997809635293899964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a81d66f66f22e7a4b8f6e7a3891b117f
+    spriteID: 2af2084e445476248a4d4ec8855ebc7c
     internalID: 0
     vertices: []
     indices: 
@@ -188,6 +251,8 @@ TextureImporter:
       walking02_0: -1057379729836924918
       walking02_1: 3190247028222294660
       walking02_2: 4193715263228349901
+      walking02_3: 6446131247249655666
+      walking02_4: 6997809635293899964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

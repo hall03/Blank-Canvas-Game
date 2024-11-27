@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 1600902524039510512
     second: shooting03_0
+  - first:
+      213: 4728672701830718012
+    second: shooting03_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,6 +99,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -103,10 +119,10 @@ TextureImporter:
       name: shooting03_0
       rect:
         serializedVersion: 2
-        x: 631
-        y: 358
-        width: 1153
-        height: 365
+        x: 0
+        y: 253
+        width: 10
+        height: 17
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,11 +137,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: shooting03_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 3506
+        height: 1110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32e4bbc4ce9f9140800000000000000
+      internalID: 4728672701830718012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae9a4aab8e32afa4f93cc16df675182e
+    spriteID: 71770f15d7d122a4da74ca341efffffe
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +174,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       shooting03_0: 1600902524039510512
+      shooting03_1: 4728672701830718012
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

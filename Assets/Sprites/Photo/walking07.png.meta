@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: 2210842143915133392
     second: walking07_3
+  - first:
+      213: 7211242934935637155
+    second: walking07_4
+  - first:
+      213: -4909582688286566405
+    second: walking07_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,6 +111,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -112,10 +131,10 @@ TextureImporter:
       name: walking07_0
       rect:
         serializedVersion: 2
-        x: 652
-        y: 436
-        width: 10
-        height: 9
+        x: 0
+        y: 244
+        width: 11
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,12 +153,12 @@ TextureImporter:
       name: walking07_1
       rect:
         serializedVersion: 2
-        x: 659
-        y: 358
-        width: 609
-        height: 333
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 12
+        y: 237
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +175,12 @@ TextureImporter:
       name: walking07_2
       rect:
         serializedVersion: 2
-        x: 1259
-        y: 408
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 21
+        y: 0
+        width: 1847
+        height: 1010
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,10 +197,10 @@ TextureImporter:
       name: walking07_3
       rect:
         serializedVersion: 2
-        x: 1266
-        y: 416
-        width: 6
-        height: 6
+        x: 1879
+        y: 175
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,11 +215,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: walking07_4
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 151
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac42e51e3b731460800000000000000
+      internalID: 7211242934935637155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking07_5
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 136
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7954d9e88addbb0800000000000000
+      internalID: -4909582688286566405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a4532ef5b9141284f94b459f69708647
+    spriteID: 92c450dfff71d014499078effa0ec83d
     internalID: 0
     vertices: []
     indices: 
@@ -214,6 +277,8 @@ TextureImporter:
       walking07_1: -3420864105625862425
       walking07_2: -3682561116563227835
       walking07_3: 2210842143915133392
+      walking07_4: 7211242934935637155
+      walking07_5: -4909582688286566405
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

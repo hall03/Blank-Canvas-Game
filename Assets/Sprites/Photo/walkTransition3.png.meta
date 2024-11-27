@@ -11,6 +11,12 @@ TextureImporter:
   - first:
       213: 6126323550201137299
     second: walkTransition3_2
+  - first:
+      213: 1945791321947836152
+    second: walkTransition3_3
+  - first:
+      213: 4519945008969955645
+    second: walkTransition3_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,10 +128,10 @@ TextureImporter:
       name: walkTransition3_0
       rect:
         serializedVersion: 2
-        x: 626
-        y: 358
-        width: 676
-        height: 356
+        x: 0
+        y: 259
+        width: 10
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +150,10 @@ TextureImporter:
       name: walkTransition3_1
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 408
-        width: 10
-        height: 8
+        x: 17
+        y: 0
+        width: 2033
+        height: 1083
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +172,10 @@ TextureImporter:
       name: walkTransition3_2
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 416
-        width: 6
-        height: 6
+        x: 2062
+        y: 175
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,6 +186,50 @@ TextureImporter:
       bones: []
       spriteID: 39849dc6fc2150550800000000000000
       internalID: 6126323550201137299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkTransition3_3
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 151
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe0db7e5e6d00b10800000000000000
+      internalID: 1945791321947836152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkTransition3_4
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 136
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3934f7b9021abe30800000000000000
+      internalID: 4519945008969955645
       vertices: []
       indices: 
       edges: []
@@ -197,10 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      walkTransition3_0: -6602513824246648220
-      walkTransition3_1: 8128768035320718554
-      walkTransition3_2: 6126323550201137299
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

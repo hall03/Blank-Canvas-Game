@@ -5528,6 +5528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 1
   startingDamage: 0
+  invulTime: 1
 --- !u!1 &870219444
 GameObject:
   m_ObjectHideFlags: 0
@@ -8045,6 +8046,7 @@ GameObject:
   - component: {fileID: 1306969757}
   - component: {fileID: 1306969759}
   - component: {fileID: 1306969760}
+  - component: {fileID: 1306969761}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -8113,17 +8115,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.043526173, y: 0.1955328}
+  m_Offset: {x: -1.113533, y: 6.365166}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.48, y: 20.48}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 18.5, y: 10.03}
     newSize: {x: 20.48, y: 20.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 14.144782, y: 16.056038}
+  m_Size: {x: 18.72995, y: 10.18224}
   m_EdgeRadius: 0
 --- !u!212 &1306969753
 SpriteRenderer:
@@ -8169,7 +8171,7 @@ SpriteRenderer:
   m_SortingLayerID: 670408977
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e4207b5c32ddd7d42b27cff6f9e0bc24, type: 3}
+  m_Sprite: {fileID: 5453661183720296183, guid: cf84da468f129994baba0c4a9c969819, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8189,7 +8191,7 @@ Transform:
   m_GameObject: {fileID: 1306969750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.4, y: -23, z: 0}
+  m_LocalPosition: {x: 43.4, y: 75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -8210,9 +8212,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 70
   jumpheight: 200
-  secondjumpheight: 225
+  secondjumpheight: 250
   maxVelocity: 250
-  powerUp: 0
+  jumptime: 1
+  powerUp: 3
 --- !u!95 &1306969756
 Animator:
   serializedVersion: 7
@@ -8248,7 +8251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
-  startingDamage: 2
+  startingDamage: 0
+  invulTime: 0.5
 --- !u!114 &1306969759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8261,6 +8265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4206022efb43c0c40b25389b02468f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timetoAttack: 0.25
+  timer: 0
 --- !u!114 &1306969760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8279,6 +8285,43 @@ MonoBehaviour:
   playerRigidbody: {fileID: 1306969751}
   normalSpeed: 50
   normalGravity: 70
+--- !u!70 &1306969761
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306969750}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.92675424, y: -1.2774816}
+  m_Size: {x: 18.48671, y: 5.0234895}
+  m_Direction: 1
 --- !u!1 &1320933420
 GameObject:
   m_ObjectHideFlags: 0
@@ -9843,6 +9886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 1
   startingDamage: 0
+  invulTime: 1
 --- !u!61 &1613181875
 BoxCollider2D:
   m_ObjectHideFlags: 0

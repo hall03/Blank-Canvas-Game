@@ -11,6 +11,12 @@ TextureImporter:
   - first:
       213: 1859479219258094100
     second: shooting10_2
+  - first:
+      213: -7518829324219061452
+    second: shooting10_3
+  - first:
+      213: 8421303808426533779
+    second: shooting10_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,6 +108,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -109,12 +128,12 @@ TextureImporter:
       name: shooting10_0
       rect:
         serializedVersion: 2
-        x: 631
-        y: 358
-        width: 611
-        height: 330
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 253
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -131,12 +150,12 @@ TextureImporter:
       name: shooting10_1
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 403
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 17
+        y: 0
+        width: 1849
+        height: 1003
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,10 +172,10 @@ TextureImporter:
       name: shooting10_2
       rect:
         serializedVersion: 2
-        x: 1245
-        y: 416
-        width: 6
-        height: 6
+        x: 1878
+        y: 175
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,11 +190,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: shooting10_3
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 151
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43be12be090c7a790800000000000000
+      internalID: -7518829324219061452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting10_4
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 136
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39368ee123b7ed470800000000000000
+      internalID: 8421303808426533779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 85b22a5224e477148a57ba58c0a8ceb8
+    spriteID: 6f659db16ff4d794094267bfd62af156
     internalID: 0
     vertices: []
     indices: 
@@ -188,6 +251,8 @@ TextureImporter:
       shooting10_0: 4104526685089086227
       shooting10_1: -8092952648245887632
       shooting10_2: 1859479219258094100
+      shooting10_3: -7518829324219061452
+      shooting10_4: 8421303808426533779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

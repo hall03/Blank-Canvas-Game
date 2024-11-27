@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
- 
+
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float jumpheight;
     [SerializeField] private float secondjumpheight;
     [SerializeField] private float maxVelocity;
+    [SerializeField] private float jumptime = 0f;
     //[SerializeField] private float spriteSize;
     private Rigidbody2D body;
     private Animator anim;
@@ -60,6 +61,8 @@ public class PlayerMovement : MonoBehaviour
  
         //Animation
         anim.SetBool("run", horizontalInput != 0);
+        anim.SetFloat("xVelocity", Math.Abs(body.linearVelocity.x));
+        anim.SetFloat("yVelocity", (body.linearVelocity.y));
 
         //Adjustable jump
         if(Input.GetKeyUp(KeyCode.Space) && body.linearVelocity.y >0)
@@ -69,14 +72,15 @@ public class PlayerMovement : MonoBehaviour
     private void Jump(float jumpheight)
     {
         body.linearVelocity = new Vector2(body.linearVelocity.x, jumpheight);
-        anim.SetTrigger("jump");
         grounded = false;
+        anim.SetBool("jump", !grounded);
     }
     
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
-            grounded = true;
+        grounded = true;
+        anim.SetBool("jump", !grounded);
     }
+
 }

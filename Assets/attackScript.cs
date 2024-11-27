@@ -6,8 +6,8 @@ public class attackScript : MonoBehaviour
 
     private bool attacking = false;
 
-    private float timetoAttack = 0.25f;
-    private float timer = 0f;
+    public float timetoAttack = 0.25f;
+    public float timer = 0f;
     private Animator anim;
     void Start()
     {
@@ -27,8 +27,8 @@ public class attackScript : MonoBehaviour
         
             if (attacking)
             {
-                timer += Time.deltaTime;
-                anim.SetBool("photoshoot", true);
+            anim.SetBool("photoshoot", true);
+            timer += Time.deltaTime;
 
             if (timer >= timetoAttack)
                 {
@@ -45,7 +45,6 @@ public class attackScript : MonoBehaviour
     {
         attacking = true;
         attackArea.SetActive(attacking);
-        Debug.LogError("ATTACCKING!");
     }
 
 }

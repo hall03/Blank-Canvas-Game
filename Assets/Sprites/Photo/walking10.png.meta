@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: 4259164578479189214
     second: walking10_3
+  - first:
+      213: 1268222679240637985
+    second: walking10_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,6 +108,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -112,10 +128,10 @@ TextureImporter:
       name: walking10_0
       rect:
         serializedVersion: 2
-        x: 625
-        y: 444
-        width: 6
-        height: 7
+        x: 0
+        y: 262
+        width: 13
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +150,10 @@ TextureImporter:
       name: walking10_1
       rect:
         serializedVersion: 2
-        x: 631
-        y: 358
-        width: 671
-        height: 356
+        x: 19
+        y: 0
+        width: 2034
+        height: 1083
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +172,10 @@ TextureImporter:
       name: walking10_2
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 408
-        width: 10
-        height: 8
+        x: 2065
+        y: 175
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +194,10 @@ TextureImporter:
       name: walking10_3
       rect:
         serializedVersion: 2
-        x: 1300
-        y: 416
-        width: 6
-        height: 6
+        x: 2043
+        y: 151
+        width: 27
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,11 +212,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: walking10_4
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 136
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e7b34bec1a99110800000000000000
+      internalID: 1268222679240637985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e876548950172c84ca603fc0a3580406
+    spriteID: 73d380b8432699a4495d609cbb14c52b
     internalID: 0
     vertices: []
     indices: 
@@ -214,6 +252,7 @@ TextureImporter:
       walking10_1: -623278251463296574
       walking10_2: 1154681917011410086
       walking10_3: 4259164578479189214
+      walking10_4: 1268222679240637985
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
