@@ -1,33 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
+    [SerializeField] private float startingDamage;
+    public float invulTime = 1f; // The time you stay invulnerable after a hit
     public float currentHealth { get; private set; }
     private Animator anim;
+    private bool invulnerable = false;
     private bool dead;
 
 
     private void Awake()
     {
         currentHealth = startingHealth;
+        TakeDamage(startingDamage);
         anim = GetComponent<Animator>();
-    
+
     }
 
     public void TakeDamage(float _damage)
     {
-        currentHealth=Mathf.Clamp(currentHealth - _damage, 0 , startingHealth);
+        if (!invulnerable)
+        {
+            currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+            StartCoroutine(JustHurt());
+        }
 
         if (currentHealth > 0)
         {
-           anim.SetTrigger("hurt");//player hurt
+            anim.SetTrigger("hurt");//player hurt
         }
         else
         {
             if (!dead)//player dead
             {
-                anim.SetTrigger("die");
+                Destroy(gameObject);
                 GetComponent<PlayerMovement>().enabled = false;
                 dead = true;
             }
@@ -36,8 +47,15 @@ public class Health : MonoBehaviour
 
     public void AddHealth(float _value)
     {
-        currentHealth=Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
 
+    IEnumerator JustHurt()
+    {
+        invulnerable = true;
+        yield return new WaitForSeconds(invulTime);
+        invulnerable = false;
+
+    }
 }
 

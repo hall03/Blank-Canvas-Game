@@ -11,6 +11,7 @@ public class DashScript: MonoBehaviour
     [Header("Player Movement")]
     public Rigidbody2D playerRigidbody;   // Reference to the player's Rigidbody2D component
     public float normalSpeed = 5f;        // Speed when not dashing
+    public float normalGravity = 1f;      // Player gravity
 
     private bool isDashing = false;       // Whether the player is currently dashing
     private float dashTime;               // Timer for dash
@@ -23,7 +24,7 @@ public class DashScript: MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
 
         // Dash logic (triggered with the Q key)
-        if (Input.GetKeyDown(KeyCode.Q) && dashCooldownTimer <= 0)
+        if (Input.GetKeyDown(KeyCode.Q) && dashCooldownTimer <= 0 && gameObject.GetComponent<PlayerMovement>().powerUp >= 1)
         {
            Dash();
         }
@@ -42,6 +43,7 @@ public class DashScript: MonoBehaviour
         {
             // Dash movement (horizontal only)
             playerRigidbody.linearVelocity = new Vector2(Mathf.Sign(horizontalInput) * dashSpeed, 0f);
+            playerRigidbody.gravityScale = 0f;
         }
         else
         {
@@ -67,5 +69,6 @@ public class DashScript: MonoBehaviour
     void EndDash()
     {
         isDashing = false;
+        playerRigidbody.gravityScale = normalGravity;
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8f11f39ee0f3ce441b6448c59f9e2fbd
+guid: cf84da468f129994baba0c4a9c969819
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -924137174839281737
     second: walkTransition0_3
+  - first:
+      213: 7441430002702064325
+    second: walkTransition0_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,12 +128,12 @@ TextureImporter:
       name: walkTransition0_0
       rect:
         serializedVersion: 2
-        x: 630
-        y: 441
-        width: 6
-        height: 7
+        x: 0
+        y: 252
+        width: 14
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +150,12 @@ TextureImporter:
       name: walkTransition0_1
       rect:
         serializedVersion: 2
-        x: 637
-        y: 358
-        width: 605
-        height: 330
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 20
+        y: 0
+        width: 1850
+        height: 1003
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +172,12 @@ TextureImporter:
       name: walkTransition0_2
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 403
-        width: 11
-        height: 13
+        x: 1881
+        y: 175
+        width: 14
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +194,12 @@ TextureImporter:
       name: walkTransition0_3
       rect:
         serializedVersion: 2
-        x: 1245
-        y: 416
-        width: 6
-        height: 6
+        x: 1859
+        y: 151
+        width: 30
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,11 +212,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: walkTransition0_4
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 135
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca9dfb3925454760800000000000000
+      internalID: 7441430002702064325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4f946067b8b548047b63199cf6f6e504
     internalID: 0
     vertices: []
     indices: 
@@ -227,6 +252,7 @@ TextureImporter:
       walkTransition0_1: 5453661183720296183
       walkTransition0_2: 2609597105589955800
       walkTransition0_3: -924137174839281737
+      walkTransition0_4: 7441430002702064325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,29 +6,34 @@ public class attackScript : MonoBehaviour
 
     private bool attacking = false;
 
-    private float timetoAttack = 0.25f;
-    private float timer = 0f;
+    public float timetoAttack = 0.25f;
+    public float timer = 0f;
+    private Animator anim;
     void Start()
     {
+        anim = GetComponent<Animator>();
         attackArea = transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
-      
-            if (Input.GetKeyDown(KeyCode.E) && gameObject.GetComponent<PlayerMovement>().powerUp == 3)
+
+        float horizontalInput = Input.GetAxis("Horizontal");
+        if (Input.GetKeyDown(KeyCode.E) && gameObject.GetComponent<PlayerMovement>().powerUp == 3)
             {
                 Attack();
             }
         
             if (attacking)
             {
-                timer += Time.deltaTime;
+            anim.SetBool("photoshoot", true);
+            timer += Time.deltaTime;
 
-                if (timer >= timetoAttack)
+            if (timer >= timetoAttack)
                 {
                     timer = 0;
+                    anim.SetBool("photoshoot", false);
                     attacking = false;
                     attackArea.SetActive(attacking);
                 }
@@ -40,7 +45,6 @@ public class attackScript : MonoBehaviour
     {
         attacking = true;
         attackArea.SetActive(attacking);
-        Debug.LogError("ATTACCKING!");
     }
 
 }
