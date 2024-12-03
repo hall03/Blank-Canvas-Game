@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpheight;
     [SerializeField] private float secondjumpheight;
     [SerializeField] private float maxVelocity;
+    //[SerializeField] private float jumptime = 0f;
     //[SerializeField] private float spriteSize;
     private Rigidbody2D body;
     private Animator anim;
@@ -46,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (powerUp >= 2 && doubleJump)
             {
+                anim.SetTrigger("2d 0");
                 Jump(secondjumpheight);
                 doubleJump = false;
             }

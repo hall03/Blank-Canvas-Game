@@ -32,7 +32,10 @@ public class Health : MonoBehaviour
 
         if (currentHealth > 0)
         {
-            anim.SetTrigger("hurt");//player hurt
+            if (anim != null)
+            {
+                anim.SetBool("hurt", true);//player hurt
+            }
         }
         else
         {
