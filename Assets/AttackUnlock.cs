@@ -6,6 +6,12 @@ using System;
 public class AttackUnlock : MonoBehaviour
 {
     public bool collisionAttackTrue = false;
+    private Animator anim;
+
+    void Start()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,7 +19,7 @@ public class AttackUnlock : MonoBehaviour
         {
             collisionAttackTrue = true;
             Destroy(gameObject);
-            collision.gameObject.GetComponent<PlayerMovement>().powerUp = 3;
+            collision.gameObject.GetComponent<PlayerMovement>().powerUp = 3; ;
         }
     }
 }
