@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (powerUp >= 2 && doubleJump)
             {
+                GetComponent<Animator>().SetTrigger("2d 0");
                 Jump(secondjumpheight);
                 doubleJump = false;
             }
