@@ -24,7 +24,10 @@ public class crocodile : MonoBehaviour
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
             else
+            {
                 movingLeft = false;
+                FlipSprite(); // Flip when changing direction
+            }
         }
         else
         {
@@ -33,8 +36,26 @@ public class crocodile : MonoBehaviour
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
             else
+            {
                 movingLeft = true;
+                FlipSprite(); // Flip when changing direction
+            }
         }
+    }
+
+    private void FlipSprite()
+    {
+        // Determine the correct facing direction
+        Vector3 localScale = transform.localScale;
+        if (movingLeft)
+        {
+            localScale.x = Mathf.Abs(localScale.x); // Ensure positive x-scale when facing left
+        }
+        else
+        {
+            localScale.x = -Mathf.Abs(localScale.x); // Ensure negative x-scale when facing right
+        }
+        transform.localScale = localScale;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
