@@ -27,13 +27,12 @@ public class attackScript : MonoBehaviour
         
             if (attacking)
             {
-            anim.SetBool("photoshoot", true);
+            anim.SetTrigger("photo");
             timer += Time.deltaTime;
 
             if (timer >= timetoAttack)
                 {
                     timer = 0;
-                    anim.SetBool("photoshoot", false);
                     attacking = false;
                     attackArea.SetActive(attacking);
                 }

@@ -57,6 +57,7 @@ public class DashScript: MonoBehaviour
         // Only dash if there's horizontal input
         if (Mathf.Abs(horizontalInput) > 0.1f)
         {
+            GetComponent<Animator>().SetTrigger("shadow");
             isDashing = true;
             dashTime = dashDuration;
             dashCooldownTimer = dashCooldown;
