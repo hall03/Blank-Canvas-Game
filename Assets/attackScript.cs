@@ -5,6 +5,7 @@ public class attackScript : MonoBehaviour
     private GameObject attackArea = default;
 
     private bool attacking = false;
+    private bool attackUnlocked = false;
 
     public float timetoAttack = 0.25f;
     public float timer = 0f;
