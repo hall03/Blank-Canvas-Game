@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DashScript: MonoBehaviour
+public class DashScript : MonoBehaviour
 {
     // Public settings for easy tweaking
     [Header("Dash Settings")]
@@ -17,16 +17,23 @@ public class DashScript: MonoBehaviour
     private float dashTime;               // Timer for dash
     private float dashCooldownTimer;      // Timer for dash cooldown
     private float horizontalInput;        // Horizontal input from the player
+    private float lastDirection = 1f;     // Keeps track of the last facing direction (1 for right, -1 for left)
 
     void Update()
     {
         // Get horizontal movement input
         horizontalInput = Input.GetAxis("Horizontal");
 
+        // Update the last direction based on input
+        if (Mathf.Abs(horizontalInput) > 0.1f)
+        {
+            lastDirection = Mathf.Sign(horizontalInput);
+        }
+
         // Dash logic (triggered with the Q key)
         if (Input.GetKeyDown(KeyCode.Q) && dashCooldownTimer <= 0 && gameObject.GetComponent<PlayerMovement>().powerUp >= 1)
         {
-           Dash();
+            Dash();
         }
 
         // Reduce cooldown timer
@@ -42,7 +49,7 @@ public class DashScript: MonoBehaviour
         if (isDashing)
         {
             // Dash movement (horizontal only)
-            playerRigidbody.linearVelocity = new Vector2(Mathf.Sign(horizontalInput) * dashSpeed, 0f);
+            playerRigidbody.linearVelocity = new Vector2(lastDirection * dashSpeed, 0f);
             playerRigidbody.gravityScale = 0f;
         }
         else
@@ -54,17 +61,14 @@ public class DashScript: MonoBehaviour
 
     void Dash()
     {
-        // Only dash if there's horizontal input
-        if (Mathf.Abs(horizontalInput) > 0.1f)
-        {
-            GetComponent<Animator>().SetTrigger("shadow");
-            isDashing = true;
-            dashTime = dashDuration;
-            dashCooldownTimer = dashCooldown;
+        // Initiate dash regardless of horizontal input
+        GetComponent<Animator>().SetTrigger("shadow");
+        isDashing = true;
+        dashTime = dashDuration;
+        dashCooldownTimer = dashCooldown;
 
-            // Stop the dash after the duration
-            Invoke(nameof(EndDash), dashDuration);
-        }
+        // Stop the dash after the duration
+        Invoke(nameof(EndDash), dashDuration);
     }
 
     void EndDash()
