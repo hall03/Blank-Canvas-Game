@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     //[SerializeField] private float spriteSize;
     private Rigidbody2D body;
     private Animator anim;
-    private bool grounded;
+    public bool grounded;
     private bool doubleJump;
 
     public int powerUp = 0;

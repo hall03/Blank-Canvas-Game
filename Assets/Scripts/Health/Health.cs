@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
     private Animator anim;
     private bool invulnerable = false;
     private bool dead;
+    public Vector3 respawnPoint;
 
 
     private void Awake()
@@ -39,11 +40,10 @@ public class Health : MonoBehaviour
         }
         else
         {
-            if (!dead)//player dead
+            if (currentHealth == 0)
             {
-                Destroy(gameObject);
-                GetComponent<PlayerMovement>().enabled = false;
-                dead = true;
+                RespawnNow();
+                AddHealth(3);
             }
         }
     }
@@ -51,6 +51,11 @@ public class Health : MonoBehaviour
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+    }
+
+    public void RespawnNow()
+    {
+        transform.position = respawnPoint;
     }
 
     IEnumerator JustHurt()
