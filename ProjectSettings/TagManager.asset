@@ -50,5 +50,8 @@ TagManager:
   - name: Player
     uniqueID: 670408977
     locked: 0
+  - name: Logo
+    uniqueID: 4111567993
+    locked: 0
   m_RenderingLayers:
   - Default
